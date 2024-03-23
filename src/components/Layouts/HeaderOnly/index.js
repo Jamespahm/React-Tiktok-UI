@@ -1,13 +1,13 @@
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Header from '~/components/Layouts/components/Header';
+import Footer from '~/components/Layouts/components/Footer';
 
 function DefaultLayout({ children }) {
     return (
         <div>
             <Header />
             <div className="container">
-                <Sidebar />
                 <div className="content">{children}</div>
+                <Footer />
             </div>
         </div>
     );
