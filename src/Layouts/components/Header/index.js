@@ -77,96 +77,6 @@ const MENU_ITEMS = [
                     code: 'ja',
                     title: '日本語',
                 },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
-                {
-                    type: 'language',
-                    code: 'vi',
-                    title: 'Tiếng Việt',
-                },
-                {
-                    type: 'language',
-                    code: 'ja',
-                    title: '日本語',
-                },
             ],
         },
     },
@@ -203,10 +113,12 @@ const USER_MENU = [
         to: '/feedback',
     },
     ...MENU_ITEMS,
-    // {
-    //     icon: <TbLogout2 />,
-    //     title: 'Log out',
-    // },
+    {
+        icon: <TbLogout2 />,
+        title: 'Log out',
+        to: '/logout',
+        separate: true,
+    },
 ];
 function Header() {
     const handleMenuChange = (MenuItems) => {

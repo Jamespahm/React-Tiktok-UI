@@ -1,6 +1,6 @@
-import Header from '~/components/Layouts/components/Header';
-import Sidebar from '~/components/Layouts/components/Sidebar';
-import Footer from '~/components/Layouts/components/Footer';
+import Header from '~/Layouts/components/Header';
+import Sidebar from '~/Layouts/components/Sidebar';
+import Footer from '~/Layouts/components/Footer';
 
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';

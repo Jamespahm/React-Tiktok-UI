@@ -56,7 +56,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
                         )}
                         <div className={cx('menu-body')}>{renderItems()}</div>
 
-                        <Footer title="Log out" LogOut={() => {}} />
+                        {/* <Footer title="Log out" LogOut={() => {}} /> */}
                     </PopperWrapper>
                 </div>
             )}
