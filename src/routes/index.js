@@ -1,5 +1,5 @@
 //Layouts
-import { HeaderOnly } from '~/Layouts';
+import { HeaderOnly } from '~/layouts';
 import config from '~/config/routes';
 
 import Home from '~/pages/Home';

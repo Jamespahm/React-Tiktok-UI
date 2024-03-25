@@ -17,7 +17,7 @@ import images from '~/assets/images';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import Image from '~/components/Image';
-import Search from '../Search';
+import Search from '~/layouts/components/Search';
 
 const cx = classNames.bind(style);
 
@@ -26,7 +26,7 @@ const MENU_ITEMS = [
         icon: <IoLanguage />,
         title: 'English',
         children: {
-            title: 'language',
+            title: 'Language',
             data: [
                 {
                     type: 'language',

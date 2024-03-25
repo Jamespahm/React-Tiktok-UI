@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import style from './Menu.module.scss';
 import { IoChevronBack } from 'react-icons/io5';
@@ -14,5 +15,9 @@ function Header({ title, onBack }) {
         </header>
     );
 }
+Header.propTypes = {
+    title: PropTypes.string.isRequired,
+    onBack: PropTypes.func.isRequired,
+};
 
 export default Header;
