@@ -36,35 +36,34 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
             );
         });
     };
+    const handleBack = () => {
+        setHistory((prev) => prev.slice(0, prev.length - 1));
+    };
+    const renderResult = (attrs) => (
+        <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
+            <PopperWrapper>
+                {history.length > 1 && <Header title={current.title} onBack={handleBack} />}
+                <div className={cx('menu-body')}>{renderItems()}</div>
+
+                {/* <Footer title="Log out" LogOut={() => {}} /> */}
+            </PopperWrapper>
+        </div>
+    );
+
+    //Reset to first menu page
+    const handleResetMenu = () => {
+        setHistory((prev) => prev.slice(0, 1));
+    };
+
     return (
         <Tippy
             delay={[0, 500]}
-            // visible
+            // offset={[]} // căn chỉnh vi trí
             interactive
             hideOnClick={hideOnClick}
-            // placement="bottom-end"
-            // appendTo={() => document.body}
-            render={(attrs) => (
-                <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-                    <PopperWrapper>
-                        {history.length > 1 && (
-                            <Header
-                                title={current.title}
-                                onBack={() => {
-                                    setHistory((prev) => prev.slice(0, prev.length - 1));
-                                }}
-                            />
-                        )}
-                        <div className={cx('menu-body')}>{renderItems()}</div>
-
-                        {/* <Footer title="Log out" LogOut={() => {}} /> */}
-                    </PopperWrapper>
-                </div>
-            )}
-            //
-            onHide={() => {
-                setHistory((prev) => prev.slice(0, 1));
-            }}
+            placement="bottom-end"
+            render={renderResult}
+            onHide={handleResetMenu}
         >
             {children}
         </Tippy>

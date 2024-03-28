@@ -17,7 +17,7 @@ import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import Image from '~/components/Image';
 import Search from '~/layouts/components/Search';
-import { InboxIcon, MessageIcon } from '~/components/cons';
+import { InboxIcon, MessageIcon } from '~/components/Icons';
 
 const cx = classNames.bind(style);
 
@@ -124,7 +124,7 @@ function Header() {
     const handleMenuChange = (MenuItems) => {
         console.log(MenuItems);
     };
-    const currentUser = true;
+    const currentUser = false;
 
     return (
         <div className={cx('wrapper')}>
