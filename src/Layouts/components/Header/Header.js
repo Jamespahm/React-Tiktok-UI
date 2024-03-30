@@ -124,7 +124,7 @@ function Header() {
     const handleMenuChange = (MenuItems) => {
         console.log(MenuItems);
     };
-    const currentUser = false;
+    const currentUser = true;
 
     return (
         <div className={cx('wrapper')}>
@@ -157,7 +157,8 @@ function Header() {
                                 <Menu items={USER_MENU} onChange={handleMenuChange}>
                                     <Image
                                         className={cx('avatar-btn')}
-                                        src="https://scontent.fhph2-1.fna.fbcdn.net/v/t39.30808-6/404494228_1100414251142275_2985755135866774625_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEK4alrqera-qGT85wvfbrcfYePbq_zSr19h49ur_NKvRaVpOh6ee6-O1tPguOawHOQ7jzuMv3r1zWdsdAoE_lz&_nc_ohc=lVCT_lUn0dgAX9a0LII&_nc_ht=scontent.fhph2-1.fna&oh=00_AfC8szRr6v4LDSBsPqLVjShFdpmpz9vLFHf3Q2rV4-UxPQ&oe=65FAFA9F"
+                                        src="
+                                        https://scontent.fhan4-4.fna.fbcdn.net/v/t39.30808-6/404494228_1100414251142275_2985755135866774625_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEK4alrqera-qGT85wvfbrcfYePbq_zSr19h49ur_NKvRaVpOh6ee6-O1tPguOawHOQ7jzuMv3r1zWdsdAoE_lz&_nc_ohc=Zqcm7WLxIM4AX81NK1y&_nc_ht=scontent.fhan4-4.fna&oh=00_AfA9JdJGke3UaVYIiiWc-Qq32LG021obygH_NyCO1xwmjA&oe=660ACC9F"
                                     />
                                 </Menu>
                             </div>
