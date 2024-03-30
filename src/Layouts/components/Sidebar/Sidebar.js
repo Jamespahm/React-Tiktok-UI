@@ -7,9 +7,13 @@ import {
     HomeActiveIcon,
     UserGroupIcon,
     UserGroupActiveIcon,
+    CompassIcon,
+    CompassActiveIcon,
     LiveIcon,
     LiveActiveIcon,
+    UserIcon,
 } from '~/components/Icons';
+import SuggestedAccounts from '~/components/SugestedAccounts';
 
 const cx = classNames.bind(styles);
 
@@ -29,8 +33,17 @@ function Sidebar() {
                     title="Following"
                     to={config.routes.following}
                 />
+                <MenuItems
+                    icon={<CompassIcon />}
+                    activeIcon={<CompassActiveIcon />}
+                    title="Discover"
+                    to={config.routes.upload}
+                />
                 <MenuItems icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} title="Live" to={config.routes.live} />
+                <MenuItems icon={<UserIcon />} title="Profile" to={config.routes.profile} />
             </Menu>
+            <SuggestedAccounts label="Suggest Account" />
+            <SuggestedAccounts label="Following accounts" />
         </aside>
     );
 }

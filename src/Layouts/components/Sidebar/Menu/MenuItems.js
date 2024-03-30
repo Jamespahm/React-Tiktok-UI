@@ -32,7 +32,7 @@ function MenuItems({ title, to, icon, activeIcon }) {
 MenuItems.propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.node.isRequired,
-    activeIcon: PropTypes.node.isRequired,
+    activeIcon: PropTypes.node,
     to: PropTypes.string.isRequired,
 };
 export default MenuItems;
